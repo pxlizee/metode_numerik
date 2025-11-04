@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Metode Newton-Raphson</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <div class="container"><a href="/" class="back-link">&larr; Kembali</a>
+        <h1>Metode Newton-Raphson</h1>
+        <h3>Atau, biarkan AI menganalisis studi kasus Anda:</h3><textarea id="case-study-input" rows="6"
+            placeholder="Tempelkan teks studi kasus Anda di sini..."></textarea><button type="button"
+            id="analyze-button">Analisis dengan AI</button>
+        <hr style="margin: 1.5rem 0;">
+        <form id="newtonraphson-form"><label for="function">Fungsi (gunakan x):</label><input type="text" id="function"
+                placeholder="Contoh: x**2 - 4" required><label for="x0">Tebakan Awal (x₀):</label><input type="number"
+                id="x0" step="any" required><label for="tolerance">Toleransi Error:</label><input type="number"
+                id="tolerance" value="0.0001" step="any" required><button type="submit">Hitung</button></form>
+        <div id="result" style="display:none;"></div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
